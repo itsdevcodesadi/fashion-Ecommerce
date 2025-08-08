@@ -50,18 +50,19 @@ h3 {
 
 .hero {
   width: 100%;
+  height: 100%;
+}
+
+.hero .container {
+  max-width: 95% !important;
 }
 
 .hero-container {
   background-color: var(--hero-bg);
   border-radius: 59px;
-  height: 650px;
   font-family: "poppins", sans-serif;
 }
 
-.hero-content {
-  padding-left: 50px;
-}
 
 .hero-container h1 {
   font-weight: 900;
@@ -125,13 +126,16 @@ h3 {
   transform-origin: left center;
 }
 
+.hero-btn-wrapper {
+  margin-top: 50px;
+}
 
 .hero-btn {
   padding: clamp(0.7rem, 1.5vw, 1rem) clamp(1.2rem, 3vw, 2rem);
   background-color: black;
   color: white;
   border-radius: 5px;
-  font-size: clamp(1.1rem, 2.5vw, 1.375rem); /* ~16px to ~22px */
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem); 
   text-decoration: none;
 }
 
@@ -146,6 +150,9 @@ h3 {
   object-fit: contain;
   display: block;
 }
+
+
+
 
 /* Brands Section */
 
