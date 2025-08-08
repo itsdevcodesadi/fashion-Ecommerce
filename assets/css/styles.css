@@ -22,17 +22,17 @@ body {
 
 body {
   background-color: var(--bg-color);
-  
+
   font-family: "poppins", sans-serif !important;
 }
 
 h2 {
-    font-weight: 900 !important;
-    
+  font-weight: 900 !important;
   font-size: clamp(2rem, 5vw, 44px) !important;
-
-    margin-bottom: 100px !important;
+  margin-bottom: 50px !important;
 }
+
+
 
 
 h3 {
@@ -42,13 +42,12 @@ h3 {
   line-height: 1.2 !important;
 }
 
- h5 {
+h5 {
   font-size: clamp(16px, 2.5vw, 24px) !important;
   font-weight: 600 !important;
   letter-spacing: -4% !important;
   color: black;
 }
-
 
 .hero {
   width: 100%;
@@ -65,10 +64,9 @@ h3 {
   font-family: "poppins", sans-serif;
 }
 
-
 .hero-container h1 {
   font-weight: 900;
-  font-size: clamp(2.5rem,6vw,4.5rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   color: black;
   line-height: 1.2;
   padding-left: 5px;
@@ -80,11 +78,7 @@ h3 {
 
   letter-spacing: -5%;
   color: #191818;
-  
 }
-
-
-
 
 .let {
   position: relative;
@@ -92,7 +86,6 @@ h3 {
   z-index: 1;
   padding: 5px 100px 0 5px;
 }
-
 
 .let::before {
   content: "";
@@ -113,7 +106,6 @@ h3 {
   z-index: 1;
   padding: 5px 100px 0 5px;
 }
-
 
 .unique::before {
   content: "";
@@ -137,10 +129,9 @@ h3 {
   background-color: black;
   color: white;
   border-radius: 5px;
-  font-size: clamp(1.1rem, 2.5vw, 1.3rem); 
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
   text-decoration: none;
 }
-
 
 .hero-btn:hover {
   text-decoration: none;
@@ -153,14 +144,10 @@ h3 {
   display: block;
 }
 
-
-
-
 /* Brands Section */
 
 .brands {
   background-color: var(--primary-color);
-  
 }
 
 .brand-container {
@@ -178,8 +165,6 @@ h3 {
   margin-top: 60px;
 }
 
-
-
 .new-arrival p {
   color: #7f7f7f;
   font-size: clamp(12px, 1.5vw, 14px);
@@ -192,58 +177,94 @@ h3 {
   color: #797979;
 }
 
-
-
-
 /* Sales Section */
 
 .sales {
-    width: 100%;
-    margin-top: 60px !important;
-    background: linear-gradient(0,#E0C340 0% ,#DFC23E 4% ,#E1C441 7%,#E3C743 10% ,#E4C542 13% ,#E6C744 16%,#E7C845 20% ,#E5C643 24% ,#E6C945 31% ,#E3C743 37% ,#E9CA48 43%,#EDCE49 50%,#F0D44C 57% ,#F4D84F 63% ,#F6DA52 67% , #F7DB53 74% ,#F9DD55 79% ,#F9DF56 86% ,#FAE157 93%,#F9DF56 100%);
+  width: 100%;
+  margin-top: 60px !important;
+  background: linear-gradient(
+    0,
+    #e0c340 0%,
+    #dfc23e 4%,
+    #e1c441 7%,
+    #e3c743 10%,
+    #e4c542 13%,
+    #e6c744 16%,
+    #e7c845 20%,
+    #e5c643 24%,
+    #e6c945 31%,
+    #e3c743 37%,
+    #e9ca48 43%,
+    #edce49 50%,
+    #f0d44c 57%,
+    #f4d84f 63%,
+    #f6da52 67%,
+    #f7db53 74%,
+    #f9dd55 79%,
+    #f9df56 86%,
+    #fae157 93%,
+    #f9df56 100%
+  );
 }
-
 
 .sales-container {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-
 .sales-content {
-    padding-left: 10% !important;
+  padding-left: 10% !important;
+}
+
+.payday {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding: 5px 50px 0 5px;
+}
+
+.payday::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  padding: 10px 50px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transform: rotate(-2deg);
+  transform-origin: left center;
 }
 
 
 .sales p {
-    font-size: clamp(16px, 2.5vw, 24px);
-    font-weight: 500;
-    color: black;
-    letter-spacing: -2%;
+  font-size: clamp(16px, 2.5vw, 24px);
+  font-weight: 500;
+  color: black;
+  letter-spacing: -2%;
+  margin-top: 25px !important;
 }
-
 
 .sales-date {
-    font-weight: bold !important;
-    margin-bottom: -5px !important;
-
+  font-weight: bold !important;
+  margin-bottom: -30px !important;
 }
 
+
+.sales .terms {
+  font-size: clamp(6px, 2.5vw, 12px);
+}
 
 .sales-btn {
-    margin-top: 50px !important;
+  margin-top: 50px !important;
 }
-
-
-
 
 /*  */
 
 .favourite {
   margin-top: 60px;
 }
-
 
 .favourite p {
   color: #7f7f7f;
@@ -252,13 +273,10 @@ h3 {
   letter-spacing: -4%;
 }
 
-
 .favourite i {
   font-size: clamp(1.2rem, 3vw, 2rem);
   color: #797979;
 }
-
-
 
 /* App Section */
 
@@ -266,46 +284,36 @@ h3 {
   margin-top: 60px;
 }
 
-
-
 .app h3 {
   font-size: clamp(28px, 5vw, 48px) !important;
   line-height: 1.5 !important;
   margin-bottom: 41px;
-  
 }
 
-
 .app p {
-  color: #7C7C7C !important;
+  color: #7c7c7c !important;
   font-size: clamp(14px, 2.5vw, 20px) !important;
   margin-left: 2px;
   margin-bottom: 41px;
 }
 
-
-
 /*  CTA Section */
-
 
 .cta {
   margin-top: 60px;
   height: 500px;
-  background-color: #E5C643;
+  background-color: #e5c643;
 }
-
 
 .cta h3 {
   font-size: clamp(30px, 5vw, 55px) !important;
   color: white !important;
 }
 
-
 .cta p {
-  color: #FFFCF8;
+  color: #fffcf8;
   font-size: clamp(18px, 3vw, 26px);
 }
-
 
 .cta #email {
   background-color: white;
@@ -323,9 +331,6 @@ h3 {
   border-radius: 5px;
 }
 
-
-
-
 .input-wrapper {
   position: relative;
   width: 100%;
@@ -335,8 +340,6 @@ h3 {
   align-items: center;
 }
 
-
-
 .input-wrapper input[type="text"] {
   flex: 1;
   padding: 12px 120px 12px 16px;
@@ -345,7 +348,6 @@ h3 {
   font-size: clamp(14px, 2vw, 16px);
   width: 100%;
 }
-
 
 .input-wrapper button {
   position: absolute;
@@ -358,60 +360,45 @@ h3 {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-font-size: clamp(12px, 1.5vw, 14px);
+  font-size: clamp(12px, 1.5vw, 14px);
 }
-
 
 .input-wrapper button:hover {
   background-color: #333;
 }
 
-
-
-
-
 /*  Footer */
-
 
 footer {
   background-color: black;
-  height: 40vh;
 }
 
-
-
-
 footer h6 {
-  color: #D9D9D9;
+  color: #d9d9d9;
   margin-bottom: 14px !important;
 }
 
 footer ul {
   list-style: none;
-  padding-left: 0  !important;
+  padding-left: 0 !important;
 }
-
 
 footer li {
-  color: #8E8E8E;
+  color: #8e8e8e;
   margin-bottom: 12px;
 }
-
-
 
 footer h5 {
   color: white !important;
   font-weight: 900 !important;
 }
 
-
 footer p {
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 
-
 footer i {
-  color: #EBD96B;
+  color: #ebd96b;
   margin-right: 14px;
   font-size: clamp(18px, 2vw, 22px);
 }
